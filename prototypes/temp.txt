@@ -1,3 +1,0 @@
-This file is for keeping an empty folder.
-
-This file can be deleted when other files in this folder exists.
