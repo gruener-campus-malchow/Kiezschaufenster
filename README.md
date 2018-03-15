@@ -8,4 +8,4 @@ We're working on an solution to see content created by customers appear on displ
 
 # German desription:
 
-Wir arbeiten daran, dass Inhalte, die von Kunden erstellt werden auf Anzeigen an verschiedenen Standorten angezeigt werden. Unsere Vorgehensweise dabei ist, einen Prototyp auf einem Raspberry Pi zu bauen, der dazu in der lage ist, Standortbasierte Inhalte auf den Anzeigetafeln anzuzeigen. Der Kunde soll dabei seinen Inhalt einsenden können und nachdem dieser von einem Administrator verifiziert wurde, kann ein Standortbesitzer anhand von Kategorien diese Inhalte gezielt auf seinen Anzeigen laufen lassen.
+Wir arbeiten daran, dass Inhalte, die von Kunden erstellt werden auf Anzeigen an verschiedenen Standorten angezeigt werden. Unsere Vorgehensweise dabei ist, einen Prototyp auf einem Raspberry Pi zu bauen, der dazu in der Lage ist, Standortbasierte Inhalte auf Anzeigetafeln anzuzeigen. Der Kunde soll dabei seinen Inhalt einsenden können und nachdem dieser von einem Administrator verifiziert wurde, kann ein Standortbesitzer anhand von Kategorien diese Inhalte gezielt auf seinen Anzeigen laufen lassen.
