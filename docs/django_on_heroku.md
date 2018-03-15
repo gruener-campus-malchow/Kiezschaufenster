@@ -1,0 +1,1 @@
+Hier (https://devcenter.heroku.com/articles/deploying-python) findet man Anleitungen, wie man python-apps mit django in einer sandbox bzw. einem Container in der Cloud betreiben kann. Das ist teilweise kostenlos.
