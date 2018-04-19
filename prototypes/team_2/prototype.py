@@ -1,9 +1,12 @@
-import time, requests
+import time, requests, sqlite3
 
 ads_from_server = ["Ad 1", "Ad 2", "Ad 3"]
 ads_from_disk = ["Old Ad 1", "Old Ad 2", "Old Ad 3"]
 
 def main():
+	create_db()
+	return
+
 	ads = []
 	if (is_connected() and new_ads_available()):
 		ads = download_ads()
@@ -11,6 +14,17 @@ def main():
 		ads = load_ads_from_disk()
 
 	display_ads(ads)
+
+def create_db():
+	print("test")
+	connection = sqlite3.connect("testserver.db")
+	cursor = connection.cursor()
+
+	sql = "CREATE TABLE IF NOT EXISTS ads(id INTEGER PRIMARY KEY, text TEXT NOT_NULL)"
+	cursor.execute(sql)
+
+	cursor.execute('INSERT INTO ads(id, text) VALUES (0, "DB Ad 1"), (1, "DB Ad 2"), (2, "DB Ad 3");')
+
 
 def display_ads(ads):
 	while(True):
