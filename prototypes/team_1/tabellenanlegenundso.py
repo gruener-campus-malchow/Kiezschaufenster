@@ -106,5 +106,6 @@ c.execute('''INSERT INTO Kategorie_zu_Bildschirm(id,bildschirm_id,kategorie)
 VALUES(:id,:bildschirm_id,:kategorie)''',
 {'id':1, 'bildschirm_id':1, 'kategorie':1})
 
+
 conn.commit()
 conn.close()
