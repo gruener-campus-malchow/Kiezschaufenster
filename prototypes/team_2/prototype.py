@@ -8,6 +8,7 @@ class Window(tk.Frame):
 	def __init__(self, master):
 		super().__init__(master)
 		master.attributes("-fullscreen", True)
+		master.config(cursor="none")
 		self.pack()
 		self.create_widgets()
 
