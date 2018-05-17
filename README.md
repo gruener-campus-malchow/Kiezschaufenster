@@ -3,7 +3,7 @@ Kiezschaufenster is an advertising project for running ads on displays on places
 
 # English description:
 
-We're working on an solution to see content created by customers appear on displays in different locations. Our approach is to build a prototype on a Raspberry Pi capable of displaying location-based content on the billboards. The customer should be able to submit its content and after it has been verified by an administrator, a site owner can use categories to run this content specifically on his displays.
+We're working on a solution to see content created by customers appear on displays in different locations. Our approach is to build a prototype on a Raspberry Pi capable of displaying location-based content on the billboards. The customer should be able to submit its content and after it has been verified by an administrator, a site owner can use categories to run this content specifically on his displays.
 
 
 # German description:
