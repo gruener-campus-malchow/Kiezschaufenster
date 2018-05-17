@@ -1,1 +1,58 @@
-<h1>Hallo!</h1>
+<html>
+	<head>
+		<style>
+			body {
+				border: none;
+				margin: none;
+				padding: none;
+			}
+			.werbung_frame {
+				width: 100%;
+				height: 100%;
+				border: none;
+				margin: none;
+				padding: none;
+			}
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+			werbung_liste = [];
+			current_werbung = 0;
+		</script>
+	</head>
+	<body>
+		<iframe src = "../SEITEN/StardewValley/index.html" class="werbung_frame"></iframe>
+		<script>
+			function get_werbung() {
+				// soll zukünftig beim server eine Liste der Werbungen abfragen
+				werbung_liste = [
+					{
+						"url":"../SEITEN/Video/index.html",
+					},
+					{
+						"url":"../SEITEN/SUCC/index.html",
+					},
+					{
+						"url":"../SEITEN/Gifs/index.html",
+					}
+				]
+			};
+			function naechste_werbung() {
+				var frame = $(".werbung_frame");
+				current_werbung++;
+				if (current_werbung >= werbung_liste.length) {
+					current_werbung = 0;
+				}
+				var ad = werbung_liste[current_werbung];
+				// zur naechsten werbung wechseln
+				frame.attr("src", ad.url);
+			};
+
+			get_werbung()
+			setInterval(naechste_werbung, 10000);
+			$(document).keypress(function() {
+				naechste_werbung();
+			});
+		</script>
+	</body>
+</html>
